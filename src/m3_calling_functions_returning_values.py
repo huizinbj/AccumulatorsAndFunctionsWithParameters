@@ -7,8 +7,8 @@ This module demonstrates and practices:
   -- UNIT TESTING.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Brett Huizinga.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m3t_tester
 
@@ -21,7 +21,7 @@ def main():
     run_test_fancy_sums_of_digits()
 
     # ------------------------------------------------------------------
-    # TODO: 9. DO THIS LAST!
+    # DONE: 9. DO THIS LAST!
     #    -- Uncomment the line of code below to run the main function in m3t_tester.py (do not make changes to it).
     #         It runs OUR tests on your code.
     #    -- Check to see whether all test cases indicate they
@@ -31,13 +31,13 @@ def main():
     #       ** Ask a TA or your professor for help in that case. **
     # ------------------------------------------------------------------
 
-    # m3t_tester.main()
+    m3t_tester.main()
 
 
 def run_test_sum_of_digits():
     """ Tests the  sum_of_digits   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function, as follows:
+    # DONE: 2. Implement this TEST function, as follows:
     #
     #  Step 1:  This TEST function tests the  sum_of_digits  function.
     #    So read the doc-string of the  sum_of_digits  function
@@ -71,7 +71,38 @@ def run_test_sum_of_digits():
     # TO DO: 2 (continued).
     # Below this comment, add 3 more test cases of your own choosing.
     # ------------------------------------------------------------------
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   sum_of_digits   function#2:')
+    print('--------------------------------------------------')
 
+    # Test 1b:
+    expected = 15
+    answer = sum_of_digits(186)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   sum_of_digits   function#3:')
+    print('--------------------------------------------------')
+
+    # Test 1c:
+    expected = 15
+    answer = sum_of_digits(582)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    print()
+    print('--------------------------------------------------')
+    print('Testing the   sum_of_digits   function #4:')
+    print('--------------------------------------------------')
+
+    # Test 1d:
+    expected = 18
+    answer = sum_of_digits(666)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
 
 def sum_of_digits(number):
     """

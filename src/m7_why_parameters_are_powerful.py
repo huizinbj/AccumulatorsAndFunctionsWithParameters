@@ -141,10 +141,10 @@ def run_test_better_draw_circles():
 #
 #   In testing your even_better_draw_circles function,
 #   can you make some fun pictures?
-# ----------------------------------------------------------------------
+# ---------------------------------------------------------------------
 
 
-def even_better_draw_circles():
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

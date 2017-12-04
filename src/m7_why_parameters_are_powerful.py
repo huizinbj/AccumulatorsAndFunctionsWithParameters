@@ -13,7 +13,7 @@ def main():
     run_test_draw_circles()
     # Un-comment the next lines when you are ready to use them.
     run_test_better_draw_circles()
-    # run_test_even_better_draw_circles()
+    run_test_even_better_draw_circles()
 
 
 # ----------------------------------------------------------------------
@@ -114,6 +114,8 @@ def run_test_better_draw_circles():
     print('--------------------------------------------------')
     better_draw_circles(15)
 
+
+
 # ----------------------------------------------------------------------
 # TODO: 3.
 #   In the previous exercise, you made a MORE POWERFUL version
@@ -143,7 +145,24 @@ def run_test_better_draw_circles():
 #   can you make some fun pictures?
 # ---------------------------------------------------------------------
 
+def run_test_even_better_draw_circles():
+    print()
+    print('--------------------------------------------------')
+    print('Testing  run_test_better_draw_circles():  See graphics window')
+    print('--------------------------------------------------')
 
+    even_better_draw_circles(5,8,10,)
+
+def even_better_draw_circles(q,n,k):
+    window = rg.RoseWindow(400, 400)
+
+    center = rg.Point(200, 200)
+    for k in range(q):
+        circle = rg.Circle(center, n * k)
+        circle.attach_to(window)
+        window.render(0.05)  # Pauses for 0.05 seconds after rendering.
+
+    window.close_on_mouse_click()
 
 
 # ----------------------------------------------------------------------
